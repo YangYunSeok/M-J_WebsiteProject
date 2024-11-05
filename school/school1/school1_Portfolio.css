@@ -1,0 +1,322 @@
+/* 갤러리 썸네일들 */
+.box__gallery {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+
+    .box__gallery {
+        width: 340px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio_img_area {
+        margin: auto;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    .portfolio_img {
+        object-fit: cover;
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .box__gallery {
+        width: 1300px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio_img_area {
+        margin: auto;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+}
+
+/* //슬라이드 팝업창 */
+.slide-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 999;
+}
+
+.slide__container {
+    position: absolute;
+    width: 35%;
+    height: 63%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.slides {
+    width: 600%;
+    position: relative;
+    left: 0;
+}
+
+.slides::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slides>li {
+    float: left;
+}
+
+/* 슬라이드 버튼 */
+.slide-btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+@media screen and (max-width: 980px) {
+    .slide-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 999;
+        width: 100%;
+    }
+
+    .slide__container {
+        position: absolute;
+        width: 50%;
+        height: 63%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 600%;
+        position: relative;
+        left: 0;
+    }
+
+    .slides::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .slides>li {
+        float: left;
+    }
+
+    /* 슬라이드 버튼 */
+    .slide-btn {
+        position: absolute;
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        margin: -4em;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .slide__container {
+        position: absolute;
+        width: 100%;
+        height: 63%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    /* 슬라이드 버튼 */
+    .slide-btn {
+        position: absolute;
+        width: 9%;
+        height: 9%;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        top: 59%;
+        transform: translateY(-50%);
+        z-index: 9;
+        margin: -7em;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        z-index: 999;
+        width: 100%;
+    }
+
+    .slide__container {
+        position: absolute;
+        width: 100%;
+        height: 63%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 600%;
+        position: relative;
+        left: 0;
+    }
+
+    .slides::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .slides>li {
+        float: left;
+    }
+
+    /* 슬라이드 버튼 */
+    .slide-btn {
+        position: absolute;
+        width: 7%;
+        height: 5%;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        top: 57%;
+        transform: translateY(-50%);
+        z-index: 9;
+        margin: -5em;
+        display: none;
+    }
+}
+
+.--prev {
+    left: 20%;
+}
+
+.--next {
+    right: 20%;
+}
+
+/* 닫기버튼 */
+.close-btn {
+    /* position: absolute;
+    padding: 1em;
+    top: 2em;
+    right: 15%; */
+
+    position: fixed;
+    right: 30px;
+    top: 25px;
+    padding: 4px 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 999;
+    width: 56px;
+    height: 50px;
+    line-height: 44px;
+    background-color: #dc3545;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Futura PT medium';
+}
+
+/* bullet */
+#bullets {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bullets>li {
+    float: left;
+    margin: 0 8px;
+}
+
+#bullets>li>a {
+    display: block;
+    text-decoration: none;
+    color: transparent;
+    width: 1em;
+    height: 1em;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#bullets>li>a.on {
+    background-color: tomato;
+}
+
+
+.gallery_title {
+    position: relative;
+    left: 15%;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+/* Portfolio 이미지 크기 */
+.portfolio_img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+/* 특성넘버 글자 css */
+.post_numberric {
+    left: 70px;
+    position: relative;
+    font-weight: 500;
+    width: 70%;
+}
