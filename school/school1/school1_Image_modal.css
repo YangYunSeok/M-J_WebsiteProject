@@ -1,0 +1,96 @@
+/* borderzone */
+/* 만들면서 어떤 구역의 크기가 틀리고, 
+어떤 구역이 빗나가있는지 확인하기 위한 용도이므로 배포 시 삭제하시면 됩니다. */
+/* .conta {
+    border: 1px rgb(142, 214, 34) solid;
+}
+
+.toleft {
+    border: 1px rgb(253, 193, 104) solid;
+}
+
+.toright {
+    border: 1px rgb(252, 185, 98) solid;
+}
+
+.content {
+    border: 1px rgb(188, 152, 255) solid;
+}
+
+.slide {
+    border: 2px rgb(99, 224, 255) solid;
+}
+
+#slides {
+    border: 2px rgb(2, 75, 47) solid;
+} */
+
+/* ===================== */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.conta {
+    margin: 0;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 6.5%;
+}
+
+.slide {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+}
+
+/* .slide * {display: inline-block;} */
+.toleft,
+.toright {
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    padding-top: 4em;
+    cursor: pointer;
+    position: relative;
+    top: 38%;
+}
+
+.toleft {
+    float: left;
+    left: 15px;
+}
+
+.toright {
+    float: right;
+    right: 15px;
+}
+
+.content {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slides {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.slides img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* #slide1{
+    transform: translateX(-100%);
+    z-index: 1;
+} */
