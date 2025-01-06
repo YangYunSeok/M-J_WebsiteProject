@@ -1192,6 +1192,11 @@ article {
     left: 40%;
 }
 
+/* 20250106 school1.html 헤더 내용 줄바꿈 방지 */
+.portfolio-meta{
+    white-space: nowrap;
+}
+
 .portfolio-meta span {
     margin: 5px 10px;
     font-weight: 300;
