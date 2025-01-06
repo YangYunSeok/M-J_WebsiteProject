@@ -13294,8 +13294,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .leftarrow,
 .rightarrow {
-  width: 70px;
-  height: 70px;
+  width: 50%;
+  /* height: 70px; */
   position: relative;
   top: 38%;
 }
