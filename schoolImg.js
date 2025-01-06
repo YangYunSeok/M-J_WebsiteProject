@@ -8,10 +8,10 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-// 외부 클릭 시 모달 닫기
-window.onclick = function (event) {
-  let modal = document.getElementById("myModal");
-  if (event.target == modal) {
-    closeModal();
-  }
-};
+// // 외부 클릭 시 모달 닫기
+// window.onclick = function (event) {
+//   let modal = document.querySelector(".close_btn");
+//   if (event.target == modal) {
+//     closeModal();
+//   }
+// };
